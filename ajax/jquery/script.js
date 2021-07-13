@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //fetch data via get request
-    $.get("https://60ebfe17e9647b0017cddfb8.mockapi.io/product", function( data ) {
+    $.get("https://60ebfe17e9647b0017cddfb8.mockapi.io/product", (data) => {
         $.each(data, function(index, animal) {
             //get where to put the data
             let table = document.getElementById('animals');
